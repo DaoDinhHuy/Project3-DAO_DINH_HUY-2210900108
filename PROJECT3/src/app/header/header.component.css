@@ -1,0 +1,70 @@
+
+.top-bar {
+  background: #ffffff;
+  padding: 10px 0;
+  border-bottom: 1px solid #ddd;
+}
+.hotline {
+  background: #c8102e;
+  color: white;
+  font-size: 16px;
+  font-weight: bold;
+  padding: 10px 15px;
+  border-radius: 5px;
+}
+.hotline:hover {
+  background: #a50d27;
+}
+.search-bar {
+  width: 100%;
+  max-width: 650px;
+}
+.search-btn {
+  background: #d97754;
+  color: white;
+}
+.cart-btn {
+  background: #2d4b6b;
+  color: white;
+  font-weight: bold;
+  padding: 10px 15px;
+  border-radius: 5px;
+}
+.cart-btn i {
+  margin-right: 5px;
+}
+
+/* Thanh menu dưới */
+.navbar {
+  background: #ffffff;
+}
+.navbar-nav .nav-item {
+  margin: 0 10px;
+}
+.navbar-nav .nav-link {
+  font-size: 16px;
+  font-weight: 600;
+  color: #333;
+}
+.navbar-nav .nav-link i {
+  margin-right: 5px;
+  font-size: 18px;
+}
+.category-btn {
+  background: #d9534f;
+  color: white;
+  font-weight: bold;
+  padding: 10px 15px;
+  border-radius: 5px;
+}
+.category-btn:hover {
+  background: #c9302c;
+}
+.search-box {
+  background: #c8102e;
+  color: white;
+
+
+  padding: 10px 10px;
+  border-radius: 5px;
+}

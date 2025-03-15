@@ -1,0 +1,46 @@
+<header>
+  <nav>
+  </nav>
+</header>
+<div class="product-detail-container">
+  <div class="quantity-selector">
+    <button class="quantity-btn" (click)="decreaseQuantity()">-</button>
+    <input type="number" [value]="quantity" class="quantity-input" min="1">
+    <button class="quantity-btn" (click)="increaseQuantity()">+</button>
+  </div>
+  <div class="product-detail">
+    <div class="product-images">
+      <img src="https://sofavila.vn/wp-content/uploads/2021/05/giuong-go-4-scaled.jpg" alt="Giường gỗ cao cấp" class="main-image">
+      <div class="thumbnail-container">
+        <img src="https://noithattamviet.com/wp-content/uploads/2021/08/giuong-ngu-tam-viet-gn-17-8-1024x1024.jpg" alt="Giường gỗ góc nhìn 1" class="thumbnail" data-image="https://noithattamviet.com/wp-content/uploads/2021/08/giuong-ngu-tam-viet-gn-17-8-1024x1024.jpg">
+        <img src="https://noithattamviet.com/wp-content/uploads/2021/08/giuong-ngu-tam-viet-gn-17-3-1024x1024.jpg" alt="Giường gỗ góc nhìn 2" class="thumbnail" data-image="https://noithattamviet.com/wp-content/uploads/2021/08/giuong-ngu-tam-viet-gn-17-3-1024x1024.jpg">
+        <img src="https://sofavila.vn/wp-content/uploads/2021/05/giuong-go-4-scaled.jpg" alt="Giường gỗ góc nhìn 3" class="thumbnail" data-image="https://sofavila.vn/wp-content/uploads/2021/05/giuong-go-4-scaled.jpg">
+      </div>
+    </div>
+    <div class="product-info">
+      <h1 class="product-title">Giường gỗ cao cấp</h1>
+      <p class="product-description">Giường gỗ tự nhiên, thiết kế hiện đại, kích thước 1m8x2m, chất liệu gỗ sồi, bảo hành 5 năm.</p>
+      <p class="product-price">Giá: <strong>99.000 ₫</strong></p>
+      <div class="quantity-selector">
+        <button class="quantity-btn">-</button>
+        <input type="number" value="1" class="quantity-input" min="1" max="10">
+        <button class="quantity-btn">+</button>
+      </div>
+      <div class="action-buttons">
+        <button class="add-to-cart">Thêm vào giỏ hàng</button>
+        <button class="buy-now">Mua ngay</button>
+      </div>
+    </div>
+  </div>
+</div>
+<script>
+
+  const thumbnails = document.querySelectorAll('.thumbnail');
+  const mainImage = document.querySelector('.main-image');
+
+  thumbnails.forEach(thumbnail => {
+    thumbnail.addEventListener('click', () => {
+      mainImage.src = thumbnail.dataset.image;
+    });
+  });
+</script>

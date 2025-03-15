@@ -1,0 +1,308 @@
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+
+<style>
+  /* Container sản phẩm */
+  .product-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 15px;
+    max-width: 1200px;
+    margin: 0 auto;
+  }
+
+  /* Sản phẩm */
+  .product-item {
+    width: 220px;
+    min-height: 450px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    text-align: center;
+    padding: 15px;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    background: #fff;
+  }
+
+
+  /* Ảnh sản phẩm */
+  .product-image {
+    width: 100%;
+    height: 120px;
+    object-fit: cover;
+    /* Đảm bảo ảnh không bị méo */
+  }
+
+  /* Tên sản phẩm */
+  .product-name {
+    font-size: 16px;
+    font-weight: bold;
+    margin: 5px 0;
+  }
+
+  /* Mô tả sản phẩm */
+  .product-description {
+    font-size: 14px;
+    word-wrap: break-word;
+    /* Tránh chữ bị tràn */
+  }
+
+  /* Giá và số lượng */
+  .product-price,
+  .product-warranty {
+    font-size: 14px;
+    font-weight: bold;
+  }
+
+  .product-action {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+  }
+
+  .product-action button {
+    width: 100%;
+    padding: 10px;
+    font-size: 14px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+
+  .btn-buy {
+    background: #007bff;
+    color: white;
+  }
+
+  .btn-cart {
+    background: #ff4d4d;
+    color: white;
+  }
+
+  /* Responsive */
+  @media screen and (max-width: 1200px) {
+    .product-item {
+      width: calc(25% - 15px);
+
+    }
+  }
+
+  @media screen and (max-width: 900px) {
+    .product-item {
+      width: calc(33.33% - 15px);
+
+    }
+  }
+
+  @media screen and (max-width: 600px) {
+    .product-item {
+      width: calc(50% - 15px);
+
+    }
+  }
+
+  @media screen and (max-width: 400px) {
+    .product-item {
+      width: 100%;
+
+    }
+  }
+
+
+  .product-item:hover {
+    background-color: #f0f0f0;
+  }
+
+
+  .product-name {
+    color: #090000;
+
+  }
+
+  .product-description {
+    color: #090000;
+
+  }
+
+  .product-price {
+    color: #090000;
+
+  }
+
+  .product-warranty {
+    color: #090000;
+
+  }
+
+  .rating {
+    display: inline-block;
+  }
+
+  .rating i {
+    display: inline-block;
+    font-size: 16px;
+    color: #ffc107; /* Màu vàng của ngôi sao */
+  }
+</style>
+
+
+<app-header></app-header>
+
+<div class="container">
+  <div class="intro-section">
+
+
+  </div>
+
+
+
+  <!-- Sản phẩm -->
+  <div class="product-container">
+    <div class="product-item">
+      <img class="product-image"
+           src="https://images.pexels.com/photos/1034584/pexels-photo-1034584.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2"
+           alt="Giường">
+      <h3 class="product-name">Giường HN4</h3>
+      <p class="product-description">Màu sắc: Theo catalogue màu<br> Kiểu dáng: Hiện đại & sang trọng<br> Kích
+        thước: Đầu giường 1200mm, đuôi giường – thành giường: 400mm</p>
+      <p class="product-price">Giá: <del>5.500.000 VND</del> 5.000.000 VND</p>
+      <p class="product-warranty">Số lượng: 10</p>
+      <div class="rating">
+        <i class="fas fa-star"></i>
+        <i class="fas fa-star"></i>
+        <i class="fas fa-star"></i>
+        <i class="fas fa-star"></i>
+        <i class="far fa-star"></i>
+      </div>
+      <div class="product-action">
+        <button class="btn btn-primary">Mua ngay</button>
+        <span class="space-x"></span>
+        <button class="btn btn-danger">Thêm vào giỏ hàng</button>
+      </div>
+    </div>
+    <!-- Sao chép thêm 5 sản phẩm giống trên -->
+
+    <div class="product-item">
+      <img class="product-image"
+           src="https://images.pexels.com/photos/279746/pexels-photo-279746.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2"
+           alt="Giường">
+      <h3 class="product-name">Giường HN5</h3>
+      <p class="product-description">Màu sắc: Theo catalogue màu<br> Kiểu dáng: Hiện đại & sang trọng<br> Kích
+        thước: Đầu giường 1200mm, đuôi giường – thành giường: 400mm</p>
+      <p class="product-price">Giá: <del>5.500.000 VND</del> 5.000.000 VND</p>
+      <p class="product-warranty">Bao hanh 12 thang</p>
+      <div class="product-action">
+        <div class="products-grid">
+          <article class="product-card">
+            <img src="product1.jpg" alt="Product" class="product-image">
+            <div class="rating">
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="far fa-star"></i>
+            </div>
+            <div class="product-action">
+              <button class="btn btn-primary">Mua ngay</button>
+              <span class="space-x"></span>
+              <button class="btn btn-danger">Thêm vào giỏ hàng</button>
+            </div>
+          </article>
+        </div>
+      </div>
+    </div>
+
+
+    <div class="product-item">
+      <img class="product-image" src="" alt="Giường">
+      <h3 class="product-name">Giường HN6</h3>
+      <p class="product-description">Màu sắc: Theo catalogue màu<br> Kiểu dáng: Hiện đại & sang trọng<br> Kích
+        thước: Đầu giường 1200mm, đuôi giường – thành giường: 400mm</p>
+      <p class="product-price">Giá: <del>5.500.000 VND</del> 5.000.000 VND</p>
+
+      <div class="rating">
+        <i class="fas fa-star"></i>
+        <i class="fas fa-star"></i>
+        <i class="fas fa-star"></i>
+        <i class="fas fa-star"></i>
+        <i class="far fa-star"></i>
+      </div>
+      <div class="product-action">
+        <button class="btn btn-primary">Mua ngay</button>
+        <span class="space-x"></span>
+        <button class="btn btn-danger">Thêm vào giỏ hàng</button>
+      </div>
+    </div>
+
+    <div class="product-item">
+      <img class="product-image" src="" alt="Giường">
+      <h3 class="product-name">Giường HN7</h3>
+      <p class="product-description">Màu sắc: Theo catalogue màu<br> Kiểu dáng: Hiện đại & sang trọng<br> Kích
+        thước: Đầu giường 1200mm, đuôi giường – thành giường: 400mm</p>
+      <p class="product-price">Giá: <del>5.500.000 VND</del> 5.000.000 VND</p>
+      <p class="product-warranty">Số lượng: 10</p>
+      <div class="rating">
+        <i class="fas fa-star"></i>
+        <i class="fas fa-star"></i>
+        <i class="fas fa-star"></i>
+        <i class="fas fa-star"></i>
+        <i class="far fa-star"></i>
+      </div>
+      <div class="product-action">
+        <button class="btn btn-primary">Mua ngay</button>
+        <span class="space-x"></span>
+        <button class="btn btn-danger">Thêm vào giỏ hàng</button>
+      </div>
+    </div>
+
+
+    <div class="product-item">
+      <img class="product-image"
+           src="https://images.pexels.com/photos/1034584/pexels-photo-1034584.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2"
+           alt="Giường">
+      <h3 class="product-name">Giường HN8</h3>
+      <p class="product-description">Màu sắc: Theo catalogue màu<br> Kiểu dáng: Hiện đại & sang trọng<br> Kích
+        thước: Đầu giường 1200mm, đuôi giường – thành giường: 400mm</p>
+      <p class="product-price">Giá: <del>5.500.000 VND</del> 5.000.000 VND</p>
+      <p class="product-warranty">Số lượng: 10</p>
+      <div class="rating">
+        <i class="fas fa-star"></i>
+        <i class="fas fa-star"></i>
+        <i class="fas fa-star"></i>
+        <i class="fas fa-star"></i>
+        <i class="far fa-star"></i>
+      </div>
+      <div class="product-action">
+        <button class="btn btn-primary">Mua ngay</button>
+        <span class="space-x"></span>
+        <button class="btn btn-danger">Thêm vào giỏ hàng</button>
+      </div>
+    </div>
+    <div class="product-item">
+      <img class="product-image"
+           src="https://images.pexels.com/photos/1034584/pexels-photo-1034584.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2"
+           alt="Giường">
+      <h3 class="product-name">Giường HN8</h3>
+      <p class="product-description">Màu sắc: Theo catalogue màu<br> Kiểu dáng: Hiện đại & sang trọng<br> Kích
+        thước: Đầu giường 1200mm, đuôi giường – thành giường: 400mm</p>
+      <p class="product-price">Giá: <del>5.500.000 VND</del> 5.000.000 VND</p>
+      <p class="product-warranty">Số lượng: 10</p>
+      <div class="rating">
+        <i class="fas fa-star"></i>
+        <i class="fas fa-star"></i>
+        <i class="fas fa-star"></i>
+        <i class="fas fa-star"></i>
+        <i class="far fa-star"></i>
+      </div>
+      <div class="product-action">
+        <button class="btn btn-primary">Mua ngay</button>
+        <span class="space-x"></span>
+        <button class="btn btn-danger">Thêm vào giỏ hàng</button>
+      </div>
+    </div>
+
+
+  </div>
+
+  <app-footer></app-footer>

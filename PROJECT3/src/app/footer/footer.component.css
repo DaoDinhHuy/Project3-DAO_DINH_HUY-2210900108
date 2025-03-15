@@ -1,0 +1,116 @@
+.footer-section {
+  background-color: #f9f9f9; /* Màu nền xám nhạt */
+  padding: 30px 0; /* Khoảng cách trên và dưới footer */
+  font-family: Arial, sans-serif; /* Font chữ */
+  color: #333; /* Màu chữ mặc định */
+}
+
+.footer-container {
+  display: flex; /* Sử dụng Flexbox để tạo bố cục cột */
+  max-width: 1200px; /* Giới hạn chiều rộng container */
+  margin: 0 auto; /* Căn giữa container */
+  padding: 0 20px; /* Padding hai bên container */
+  flex-wrap: wrap; /* Cho phép cột xuống hàng khi không đủ không gian */
+  justify-content: space-between; /* Phân bổ khoảng trắng đều giữa các cột */
+}
+
+.footer-column {
+  flex-basis: 24%; /* Chiều rộng mỗi cột (khoảng 25% để có 4 cột) */
+  margin-bottom: 30px; /* Khoảng cách dưới mỗi cột */
+}
+
+.footer-title {
+  color: #fd2b2b; /* Màu tiêu đề (xanh dương) - có thể điều chỉnh */
+  font-size: 18px; /* Kích thước tiêu đề */
+  font-weight: bold; /* Độ đậm tiêu đề */
+  margin-bottom: 15px; /* Khoảng cách dưới tiêu đề */
+}
+
+.footer-column p, .footer-column li, .footer-column a {
+  font-size: 14px; /* Kích thước chữ nội dung */
+  line-height: 1.6; /* Khoảng cách dòng */
+  color: #555; /* Màu chữ nội dung */
+}
+
+.footer-column a {
+  text-decoration: none; /* Loại bỏ gạch chân mặc định của liên kết */
+  color: #555; /* Màu liên kết */
+}
+
+.footer-column a:hover {
+  color: #f33939; /* Màu liên kết khi hover - có thể điều chỉnh */
+}
+
+.contact-details p {
+  margin-bottom: 8px; /* Khoảng cách giữa các dòng thông tin liên hệ */
+}
+
+.category-list {
+  list-style: none; /* Loại bỏ dấu chấm mặc định của danh sách ul */
+  padding: 0;
+}
+
+.category-list li {
+  margin-bottom: 5px; /* Khoảng cách giữa các mục danh mục */
+}
+
+.staff-info {
+  display: flex; /* Sử dụng Flexbox cho layout nhân viên */
+  flex-direction: column; /* Xếp chồng nhân viên theo chiều dọc */
+}
+
+.staff-member {
+  margin-bottom: 20px; /* Khoảng cách dưới mỗi nhân viên */
+  text-align: center; /* Căn giữa nội dung nhân viên */
+}
+
+.staff-member img {
+  width: 80px; /* Kích thước ảnh nhân viên - có thể điều chỉnh */
+  height: 80px;
+  border-radius: 50%; /* Bo tròn ảnh nhân viên */
+  margin-bottom: 10px; /* Khoảng cách dưới ảnh */
+}
+
+.staff-member h4 {
+  font-size: 16px; /* Kích thước tên nhân viên */
+  margin-bottom: 5px; /* Khoảng cách dưới tên */
+}
+
+.staff-title {
+  font-size: 13px; /* Kích thước chức danh nhân viên */
+  color: #777; /* Màu chức danh nhân viên */
+  margin-bottom: 10px; /* Khoảng cách dưới chức danh */
+}
+
+.request-form .form-group {
+  margin-bottom: 15px; /* Khoảng cách dưới mỗi group trường form */
+}
+
+.request-form input[type="text"],
+.request-form input[type="tel"],
+.request-form input[type="email"],
+.request-form textarea {
+  width: 100%; /* Chiều rộng trường nhập liệu 100% cột */
+  padding: 10px; /* Padding bên trong trường nhập liệu */
+  border: 1px solid #ccc; /* Viền trường nhập liệu */
+  border-radius: 5px; /* Bo tròn góc trường nhập liệu */
+  box-sizing: border-box; /* Tính padding và border vào chiều rộng */
+}
+
+.request-form textarea {
+  resize: vertical; /* Cho phép thay đổi chiều cao textarea dọc */
+}
+
+.submit-button {
+  background-color: #090606; /* Màu nền nút submit - có thể điều chỉnh */
+  color: white; /* Màu chữ nút submit */
+  padding: 12px 20px; /* Padding nút submit */
+  border: none; /* Loại bỏ viền nút */
+  border-radius: 5px; /* Bo tròn góc nút */
+  cursor: pointer; /* Hiển thị con trỏ tay khi hover */
+  font-size: 16px; /* Kích thước chữ nút */
+}
+
+.submit-button:hover {
+  background-color: #ff1f1f; /* Màu nền nút khi hover - có thể điều chỉnh */
+}
